@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desktop-icons"
+version = "0.1.0"
+description = "Small Windows wrapper for reading and moving desktop icons."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Gleb" },
+    { name = "Codex" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Desktop Environment",
+]
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+include = ["desktop_icons*"]
